@@ -11,13 +11,13 @@
   "function-runtime": "dotnet6",
   "function-memory-size": 512,
   "function-timeout": 15,
-  "function-handler": "DotNetWebApi.Lambda::DotNetWebApi.Lambda.Function::FunctionHandlerAsync",
+  "function-handler": "CloudWatchLoggingWithSerilog.Lambda::CloudWatchLoggingWithSerilog.Lambda.FunctionHandler::Handle",
+  "framework": "net6.0",
+  "function-name": "SerilogDemo",
+  "function-description": "default",
+  "package-type": "Zip",
   "function-architecture": "x86_64",
   "tracing-mode": "PassThrough",
   "environment-variables": "",
-  "image-tag": "",
-  "framework": "net6.0",
-  "function-name": "dotnetRestApiDemo",
-  "function-description": "default",
-  "package-type": "Zip"
+  "image-tag": ""
 }
