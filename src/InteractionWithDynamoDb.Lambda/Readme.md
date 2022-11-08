@@ -9,7 +9,7 @@ The following tools are required to execute this lambda function in local
 ## Local Setup
 In order to execute this project on your machine, you must first install both DynamoDB and Mock lambda test tool.
 
-### DynamoDB
+### Dynamo DB
 In order to setup the DynamoDB instance in local, run the following command on this project directory.
 
 >docker-compose up
