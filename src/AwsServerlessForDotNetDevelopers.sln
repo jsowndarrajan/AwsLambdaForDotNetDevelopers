@@ -7,21 +7,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetWebApi.Lambda", "DotN
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudWatchLoggingWithSerilog.Lambda", "CloudWatchLoggingWithSerilog.Lambda\CloudWatchLoggingWithSerilog.Lambda.csproj", "{B9FD4EB8-E6A8-40C9-A8FD-C0C79838B4AE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InteractionWithDynamoDb.Lambda", "InteractionWithDynamoDb.Lambda", "{E0E3D5D5-A8C5-4D24-A2F3-7322DE87B484}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InteractionWithDynamoDb", "InteractionWithDynamoDb", "{E0E3D5D5-A8C5-4D24-A2F3-7322DE87B484}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CloudWatchLoggingWithSerilog.Lambda", "CloudWatchLoggingWithSerilog.Lambda", "{21BDFC22-8CD6-46AA-AF6E-2C830F5C9713}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CloudWatchLoggingWithSerilog", "CloudWatchLoggingWithSerilog", "{21BDFC22-8CD6-46AA-AF6E-2C830F5C9713}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNetWebApi.Lambda", "DotNetWebApi.Lambda", "{4266120A-7196-4234-8476-A37B0B5D83BA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNetWebApi", "DotNetWebApi", "{4266120A-7196-4234-8476-A37B0B5D83BA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InteractionWithDynamoDb.Lambda", "InteractionWithDynamoDb.Lambda\InteractionWithDynamoDb.Lambda.csproj", "{BED11A3F-F68A-40CD-99D0-9AE041B1A0DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{3B191CB0-2514-40F3-B0D5-3652707C0108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsServerless.Environment", "AwsServerless.Environment\AwsServerless.Environment.csproj", "{7BD288B5-F628-452F-82AE-C570ACA552C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsServerless.Environment", "AwsServerless.Environment\AwsServerless.Environment.csproj", "{7BD288B5-F628-452F-82AE-C570ACA552C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsServerless.DynamoDB", "AwsServerless.DynamoDB\AwsServerless.DynamoDB.csproj", "{1ACE02BA-503E-41E0-ACD1-C304AB466A20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsServerless.DynamoDB", "AwsServerless.DynamoDB\AwsServerless.DynamoDB.csproj", "{1ACE02BA-503E-41E0-ACD1-C304AB466A20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsServerless.CloudWatch.Serilog", "AwsServerless.CloudWatch.Serilog\AwsServerless.CloudWatch.Serilog.csproj", "{B05F8ADD-0FE3-4ACB-9FB7-E92E71597E8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsServerless.CloudWatch.Serilog", "AwsServerless.CloudWatch.Serilog\AwsServerless.CloudWatch.Serilog.csproj", "{B05F8ADD-0FE3-4ACB-9FB7-E92E71597E8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionUrlWithMultipartFormData.Lambda", "FunctionUrlWithMultipartFormData.Lambda\FunctionUrlWithMultipartFormData.Lambda.csproj", "{4B310053-7232-40E1-A6B0-73A8EF6C50DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunctionUrlWithMultipartFormData", "FunctionUrlWithMultipartFormData", "{8BE26067-E717-4F95-B6D4-E5E2CD146B3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,10 @@ Global
 		{B05F8ADD-0FE3-4ACB-9FB7-E92E71597E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B05F8ADD-0FE3-4ACB-9FB7-E92E71597E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B05F8ADD-0FE3-4ACB-9FB7-E92E71597E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B310053-7232-40E1-A6B0-73A8EF6C50DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B310053-7232-40E1-A6B0-73A8EF6C50DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B310053-7232-40E1-A6B0-73A8EF6C50DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B310053-7232-40E1-A6B0-73A8EF6C50DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{7BD288B5-F628-452F-82AE-C570ACA552C0} = {3B191CB0-2514-40F3-B0D5-3652707C0108}
 		{1ACE02BA-503E-41E0-ACD1-C304AB466A20} = {3B191CB0-2514-40F3-B0D5-3652707C0108}
 		{B05F8ADD-0FE3-4ACB-9FB7-E92E71597E8F} = {3B191CB0-2514-40F3-B0D5-3652707C0108}
+		{4B310053-7232-40E1-A6B0-73A8EF6C50DD} = {8BE26067-E717-4F95-B6D4-E5E2CD146B3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5154C2D8-234A-4B7C-A944-DCA9751269D6}
