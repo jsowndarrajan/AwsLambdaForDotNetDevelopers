@@ -33,6 +33,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretsManagerExtension", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemsManagerExtension", "SystemsManagerExtension\SystemsManagerExtension.csproj", "{1EB01D38-32DB-42A1-AB54-67D3A6401364}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LambdaAntiPatterns", "LambdaAntiPatterns", "{BC7E970E-C692-4098-8048-A52F768726A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LambdaCallingAnotherLambda", "LambdaCallingAnotherLambda", "{46B9621D-1F59-4268-8116-46CCBAEF933A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeoutExperiment.CreateOrder", "TimeoutExperiment.CreateOrder\TimeoutExperiment.CreateOrder.csproj", "{787004D1-3D61-444E-B4E4-58079A1F9B3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeoutExperiment.ProcessPayment", "TimeoutExperiment.ProcessPayment\TimeoutExperiment.ProcessPayment.csproj", "{1483759F-735E-4ECD-9369-697D761C7328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsServerless.Shared", "AwsServerless.Shared\AwsServerless.Shared.csproj", "{6D745EC6-3E07-4FAA-8AA8-5591668409C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +85,18 @@ Global
 		{1EB01D38-32DB-42A1-AB54-67D3A6401364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB01D38-32DB-42A1-AB54-67D3A6401364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB01D38-32DB-42A1-AB54-67D3A6401364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{787004D1-3D61-444E-B4E4-58079A1F9B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787004D1-3D61-444E-B4E4-58079A1F9B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787004D1-3D61-444E-B4E4-58079A1F9B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787004D1-3D61-444E-B4E4-58079A1F9B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1483759F-735E-4ECD-9369-697D761C7328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1483759F-735E-4ECD-9369-697D761C7328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1483759F-735E-4ECD-9369-697D761C7328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1483759F-735E-4ECD-9369-697D761C7328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D745EC6-3E07-4FAA-8AA8-5591668409C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D745EC6-3E07-4FAA-8AA8-5591668409C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D745EC6-3E07-4FAA-8AA8-5591668409C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D745EC6-3E07-4FAA-8AA8-5591668409C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +111,10 @@ Global
 		{4B310053-7232-40E1-A6B0-73A8EF6C50DD} = {8BE26067-E717-4F95-B6D4-E5E2CD146B3D}
 		{584C1733-F52C-4D0F-9DF5-BC1D29C7CAD0} = {2D11E085-0BD0-4F2C-AE85-957B5D52AE32}
 		{1EB01D38-32DB-42A1-AB54-67D3A6401364} = {2D11E085-0BD0-4F2C-AE85-957B5D52AE32}
+		{46B9621D-1F59-4268-8116-46CCBAEF933A} = {BC7E970E-C692-4098-8048-A52F768726A8}
+		{787004D1-3D61-444E-B4E4-58079A1F9B3A} = {46B9621D-1F59-4268-8116-46CCBAEF933A}
+		{1483759F-735E-4ECD-9369-697D761C7328} = {46B9621D-1F59-4268-8116-46CCBAEF933A}
+		{6D745EC6-3E07-4FAA-8AA8-5591668409C8} = {3B191CB0-2514-40F3-B0D5-3652707C0108}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5154C2D8-234A-4B7C-A944-DCA9751269D6}
